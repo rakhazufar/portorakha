@@ -1,5 +1,7 @@
 import { Inter } from "next/font/google";
 import "./globals.css";
+import ColorModeProvider from "@app/provider/darkMode";
+import { Box } from "@mui/material";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -11,7 +13,15 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <ColorModeProvider>
+        <Box
+          component="body"
+          sx={{ backgroundColor: "primary.main" }}
+          className={inter.className}
+        >
+          {children}
+        </Box>
+      </ColorModeProvider>
     </html>
   );
 }
