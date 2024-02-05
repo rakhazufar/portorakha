@@ -3,3 +3,7 @@
   margin: 0;
   box-sizing: border-box;
 }
+
+.MuiGrid-item {
+  padding: 10px 0 10px 0 !important;
+}

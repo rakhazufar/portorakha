@@ -9,7 +9,9 @@ const darkTheme = createTheme({
   palette: {
     primary: {
       main: "#16191D",
+      hoverMain: "#2d333b",
       button: "#3A9BDC",
+      darkerText: "#6e6b6b",
       text: "#f5f5f5",
     },
   },
