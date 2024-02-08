@@ -3,10 +3,12 @@
 import AppBar from "@mui/material/AppBar";
 import Toolbar from "@mui/material/Toolbar";
 import AdbIcon from "@mui/icons-material/Adb";
-import { Container, FormGroup, FormControlLabel } from "@mui/material";
+import { Container, FormGroup, FormControlLabel, Box } from "@mui/material";
 import { styled } from "@mui/material/styles";
 import Switch from "@mui/material/Switch";
 import { useColorMode } from "@app/provider/darkMode";
+import Glasses from "@../public/static/glasses.png";
+import Image from "next/image";
 
 const MaterialUISwitch = styled(Switch)(({ theme }) => ({
   width: 62,
@@ -59,7 +61,7 @@ function Navbar() {
   const { darkMode, toggleDarkMode } = useColorMode();
 
   return (
-    <AppBar position="static" sx={{ backgroundColor: "inherit" }}>
+    <AppBar position="fixed" sx={{ backgroundColor: "inherit" }}>
       <Toolbar disableGutters>
         <Container
           maxWidth="md"
@@ -69,7 +71,13 @@ function Navbar() {
             alignItems: "center",
           }}
         >
-          <AdbIcon sx={{ color: "primary.text" }} />
+          <Box
+            sx={{
+              cursor: "pointer",
+            }}
+          >
+            <Image src={Glasses} alt="Logo" width={50} height={50} />
+          </Box>
           <FormGroup>
             <FormControlLabel
               control={

@@ -17,8 +17,8 @@ function Header() {
         sx={{
           display: "flex",
           justifyContent: "space-between",
-          px: 5,
-          marginTop: -10,
+          px: { md: 5, xs: 3 },
+          marginTop: { md: -10, sm: -9, xs: -7 },
           alignItems: "center",
         }}
       >
@@ -26,54 +26,67 @@ function Header() {
           alt="Remy Sharp"
           src="static/photo.jpg"
           sx={{
-            width: 150,
-            height: 150,
+            width: { md: "150px", sm: "120px", xs: "100px" },
+            height: { md: "150px", sm: "120px", xs: "100px" },
             border: "5px solid",
             borderColor: "primary.text",
           }}
         />
-        <Box>
+        <Box sx={{ display: "flex", marginTop: { md: 8, xs: 7.5 } }}>
           <Button
             variant="outlined"
             sx={{
               borderColor: "primary.text",
               borderRadius: "50px",
-              marginTop: 8,
-              py: 1,
-              marginRight: 2,
+              marginRight: { md: 2, xs: 1 },
+              minWidth: 0,
+              height: "40px",
               ":hover": {
                 borderColor: "primary.button",
               },
             }}
           >
-            <EmailIcon sx={{ color: "primary.text" }} />
+            <EmailIcon
+              sx={{
+                color: "primary.text",
+                width: { md: "20px", xs: "17px" },
+                height: { md: "20px", xs: "17px" },
+              }}
+            />
           </Button>
 
           <Button
             variant="contained"
             size="large"
-            endIcon={<LinkedInIcon sx={{ width: 23, height: 23 }} />}
+            endIcon={
+              <LinkedInIcon
+                sx={{
+                  width: { md: 23, sm: 20, xs: 17 },
+                  height: { md: 23, sm: 20, xs: 17 },
+                }}
+              />
+            }
             sx={{
               backgroundColor: "primary.button",
               textTransform: "none",
               borderRadius: "50px",
+              fontSize: "12px",
               px: 4,
-              marginTop: 8,
               ":hover": {
                 backgroundColor: "primary.button",
               },
             }}
           >
-            Follow
+            Connect
           </Button>
         </Box>
       </Box>
-      <Box sx={{ paddingLeft: 6 }}>
+      <Box sx={{ paddingLeft: { md: 6, xs: 3 }, marginTop: { md: 0, xs: 1 } }}>
         <Box sx={{ display: "flex", alignItems: "center", paddingTop: 1 }}>
           <Typography
             variant="h1"
             sx={{
-              fontSize: 30,
+              fontSize: { md: 30, xs: 25 },
               fontWeight: 600,
               color: "primary.text",
             }}
@@ -84,21 +97,21 @@ function Header() {
             sx={{
               color: "primary.button",
               marginLeft: 1,
-              width: 28,
-              height: 28,
+              width: { md: 28, xs: 20 },
+              height: { md: 28, xs: 20 },
             }}
           />
         </Box>
-        <Box sx={{ display: "flex", alignItems: "center", paddingTop: 1 }}>
+        <Box sx={{ display: "flex", alignItems: "center", marginTop: 1 }}>
           <Typography
             variant="h1"
             sx={{
-              fontSize: 17,
+              fontSize: { md: 17, xs: 15 },
               fontWeight: 400,
               color: "primary.text",
             }}
           >
-            Web Developer, Graphic Designer, and... Sometime Video Editor :)
+            Web Developer, Graphic Designer, and... sometimes Video Editor :)
           </Typography>
         </Box>
         <Box sx={{ display: "flex", alignItems: "center", paddingTop: 1.5 }}>
@@ -113,7 +126,7 @@ function Header() {
           <Typography
             variant="h1"
             sx={{
-              fontSize: 15,
+              fontSize: { md: 15, xs: 14 },
               fontWeight: 400,
               marginLeft: 0.5,
               color: "primary.darkerText",
@@ -125,7 +138,7 @@ function Header() {
           <SchoolIcon
             sx={{
               color: "primary.darkerText",
-              marginLeft: 3,
+              marginLeft: { md: 3, xs: 1.5 },
               width: 21,
               height: 21,
             }}
@@ -133,8 +146,9 @@ function Header() {
           <Typography
             variant="h1"
             sx={{
-              fontSize: 15,
+              fontSize: { md: 15, xs: 14 },
               fontWeight: 400,
+              maxWidth: { md: 120, xs: 65 },
               marginLeft: 0.5,
               color: "primary.darkerText",
             }}
@@ -145,7 +159,7 @@ function Header() {
           <CakeIcon
             sx={{
               color: "primary.darkerText",
-              marginLeft: 3,
+              marginLeft: { md: 3, xs: 1.5 },
               width: 21,
               height: 21,
             }}
@@ -153,7 +167,7 @@ function Header() {
           <Typography
             variant="h1"
             sx={{
-              fontSize: 15,
+              fontSize: { md: 15, xs: 14 },
               fontWeight: 400,
               marginLeft: 0.5,
               color: "primary.darkerText",

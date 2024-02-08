@@ -2,9 +2,10 @@
 
 import { Box, Grid } from "@mui/material";
 import { useState } from "react";
+import SelectedTab from "@app/components/selectedTab";
 
 const tabStyle = {
-  fontSize: 17,
+  fontSize: { md: 17, xs: 14 },
   fontWeight: 600,
   marginTop: 5,
   cursor: "pointer",
@@ -32,8 +33,16 @@ function Tabs() {
   };
 
   return (
-    <Box sx={{ width: "100%", display: "flex", justifyContent: "center" }}>
-      <Grid container spacing={2} sx={{ width: "87%" }}>
+    <Box
+      sx={{
+        width: "100%",
+        display: "flex",
+        justifyContent: "center",
+        flexDirection: "column",
+        alignItems: "center",
+      }}
+    >
+      <Grid container spacing={2} sx={{ width: "90%", marginLeft: 0 }}>
         <Grid
           item
           xs={3}
@@ -87,6 +96,7 @@ function Tabs() {
           Project
         </Grid>
       </Grid>
+      <SelectedTab tab={selectedTab} />
     </Box>
   );
 }

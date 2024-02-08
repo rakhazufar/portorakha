@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <Box component="main" sx={{ backgroundColor: "primary.main" }}>
       <Navbar />
-      <Container maxWidth="md" sx={{ padding: 0 }}>
+      <Container maxWidth="md" sx={{ padding: 0, mt: 7 }}>
         <Header />
         <Tabs />
       </Container>
