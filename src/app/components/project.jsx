@@ -1,7 +1,7 @@
 import { Box } from "@mui/material";
 import Post from "@app/components/post";
 
-function Feed() {
+function Project() {
   const allPost = [
     {
       theme: "Welcome 😀",
@@ -87,4 +87,4 @@ const secondPost = (
   </>
 );
 
-export default Feed;
+export default Project;

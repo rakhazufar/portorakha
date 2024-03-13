@@ -1,5 +1,6 @@
-import MyIframeComponent from "@app/components/pesawat";
-import { Box, Container, Typography } from "@mui/material";
+"use client";
+
+import { Box, Typography } from "@mui/material";
 import Avatar from "@mui/material/Avatar";
 import Button from "@mui/material/Button";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
@@ -8,11 +9,12 @@ import BusinessCenterIcon from "@mui/icons-material/BusinessCenter";
 import SchoolIcon from "@mui/icons-material/School";
 import CakeIcon from "@mui/icons-material/Cake";
 import EmailIcon from "@mui/icons-material/Email";
+import Plane from "@app/components/pesawat";
 
-function Header() {
+function Header({ innerRef }) {
   return (
-    <Box component="header">
-      <MyIframeComponent />
+    <Box component="header" ref={innerRef}>
+      <Plane />
       <Box
         sx={{
           display: "flex",
@@ -107,6 +109,7 @@ function Header() {
             variant="h1"
             sx={{
               fontSize: { md: 17, xs: 15 },
+              pr: 1,
               fontWeight: 400,
               color: "primary.text",
             }}

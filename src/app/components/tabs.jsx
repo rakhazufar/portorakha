@@ -80,7 +80,7 @@ function Tabs() {
             ...isSelected(2),
           }}
         >
-          Content
+          Certificate
         </Grid>
         <Grid
           item

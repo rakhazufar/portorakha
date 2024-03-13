@@ -1,15 +1,15 @@
 import { Box } from "@mui/material";
 import Post from "@app/components/post";
 
-function Feed() {
+function Certificate() {
   const allPost = [
     {
-      theme: "Welcome 😀",
-      title: "Hello World!🖐",
+      theme: "Binar 😀",
+      title: "Look!🤞",
       body: firstPost,
-      picture: "/static/photo-1.jpg",
-      alt: "Picture of the author",
-      date: "6 February 2024",
+      picture: "/static/sertifikat.png",
+      alt: "Sertifikat Binar Academy",
+      date: "22 July 2022",
     },
     {
       theme: "New Experience 😍",
@@ -33,20 +33,19 @@ function Feed() {
 
 const firstPost = (
   <>
-    Hy Buddy! I&apos;m a web developer and graphic designer with a knack for
-    video editing.
-    <br />
-    My portfolio highlights innovative, user-centric digital projects. You can
-    connect with me on LinkedIn with click{" "}
+    Thrilled to share that I&apos;ve successfully completed the{" "}
     <span
       style={{
         fontWeight: 600,
         color: "#3A9BDC",
       }}
     >
-      Connect
+      Fullstack Web Development Wave 2 program!
     </span>{" "}
-    on my Bio.
+    . This journey, supported by Kampus Merdeka, has been incredibly enriching
+    and has significantly expanded my skill set. A huge thank you to Binar
+    Academy for the guidance and knowledge. Eager to apply what I&apos;ve
+    learned in the real world.
   </>
 );
 
@@ -87,4 +86,4 @@ const secondPost = (
   </>
 );
 
-export default Feed;
+export default Certificate;

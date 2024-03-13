@@ -1,8 +1,14 @@
 import { Avatar, Box, Typography } from "@mui/material";
-import React from "react";
 import Image from "next/image";
+import React from "react";
 
-function Post({ content }) {
+function About() {
+  const content = {
+    title: "Hello Buddy!👋",
+    body: firstPost,
+    date: "6 February 2024",
+  };
+
   return (
     <Box
       sx={{
@@ -62,31 +68,6 @@ function Post({ content }) {
                 flexDirection: "column",
               }}
             >
-              <Box
-                sx={{
-                  backgroundColor: "primary.hoverSecond",
-                  py: 0.5,
-                  borderRadius: "50px",
-                  textAlign: "center",
-                  width: "auto",
-                  maxWidth: "fit-content",
-                  display: "inline-flex",
-                  justifyContent: "center",
-                }}
-              >
-                <Typography
-                  sx={{
-                    fontWeight: 600,
-                    fontSize: 13,
-                    px: 2,
-                    color: "primary.text",
-                    mt: 0.2,
-                  }}
-                >
-                  {content.theme}
-                </Typography>
-              </Box>
-
               <Box sx={{ display: "flex", flexDirection: "column" }}>
                 {/* title */}
                 <Typography
@@ -109,23 +90,6 @@ function Post({ content }) {
                 >
                   {content.body}
                 </Typography>
-                <Box
-                  sx={{
-                    width: "100%",
-                    marginTop: 1,
-                    height: { md: "60vh", xs: "25vh" },
-                    position: "relative",
-                    borderRadius: "10px",
-                    overflow: "hidden",
-                  }}
-                >
-                  <Image
-                    src={content.picture}
-                    fill={true}
-                    objectFit="cover"
-                    alt={content.alt}
-                  />
-                </Box>
               </Box>
             </Box>
           </Box>
@@ -135,4 +99,24 @@ function Post({ content }) {
   );
 }
 
-export default Post;
+const firstPost = (
+  <>
+    I&apos;m a big supporter of creative coding, and I aim to inspire confidence
+    in others to build whatever they can dream up. I enjoy talking about this
+    topic and teaching others how to enhance their coding skills.
+    <br /> <br />
+    I find it amazing how you can just open up a computer and have the world of
+    knowledge at your fingertips!
+    <br /> <br />I enjoy working with React, designing CSS both within and
+    outside of JavaScript, and exploring Golang.
+    <br />
+    <br />
+    Beyond making websites, I&apos;m passionate about graphic design, public
+    speaking, and video editing.
+    <br /> <br /> For more on this, you can check the &quot;Content&quot; tab.
+    Feel free to drop a message and say &quot;Hey!&quot;. I&apos;m eager to
+    connect with you!
+  </>
+);
+
+export default About;

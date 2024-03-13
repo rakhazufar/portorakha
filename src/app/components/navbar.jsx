@@ -2,13 +2,19 @@
 
 import AppBar from "@mui/material/AppBar";
 import Toolbar from "@mui/material/Toolbar";
-import AdbIcon from "@mui/icons-material/Adb";
-import { Container, FormGroup, FormControlLabel, Box } from "@mui/material";
+import {
+  Container,
+  FormGroup,
+  FormControlLabel,
+  Box,
+  Typography,
+} from "@mui/material";
 import { styled } from "@mui/material/styles";
 import Switch from "@mui/material/Switch";
 import { useColorMode } from "@app/provider/darkMode";
 import Glasses from "@../public/static/glasses.png";
 import Image from "next/image";
+import { useEffect } from "react";
 
 const MaterialUISwitch = styled(Switch)(({ theme }) => ({
   width: 62,
@@ -57,8 +63,8 @@ const MaterialUISwitch = styled(Switch)(({ theme }) => ({
   },
 }));
 
-function Navbar() {
-  const { darkMode, toggleDarkMode } = useColorMode();
+function Navbar({ hasScrolledPast }) {
+  const { toggleDarkMode } = useColorMode();
 
   return (
     <AppBar position="fixed" sx={{ backgroundColor: "inherit" }}>
@@ -71,12 +77,31 @@ function Navbar() {
             alignItems: "center",
           }}
         >
-          <Box
-            sx={{
-              cursor: "pointer",
-            }}
-          >
-            <Image src={Glasses} alt="Logo" width={50} height={50} />
+          <Box sx={{ display: "flex", alignItems: "center", gap: 2 }}>
+            <Box
+              sx={{
+                cursor: "pointer",
+                width: { md: 50, xs: 40 },
+                height: { md: 50, xs: 40 },
+                position: "relative",
+              }}
+            >
+              <Image src={Glasses} alt="Logo" fill={true} />
+            </Box>
+            {hasScrolledPast ? (
+              <Typography
+                variant="h1"
+                sx={{
+                  fontSize: { md: 20, xs: 18 },
+                  fontWeight: 500,
+                  color: "primary.text",
+                }}
+              >
+                Rakha Zufar
+              </Typography>
+            ) : (
+              ""
+            )}
           </Box>
           <FormGroup>
             <FormControlLabel
