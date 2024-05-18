@@ -37,9 +37,7 @@ function Feed() {
   return (
     <Box>
       {allPost.map((post) => (
-        <>
-          <Post content={post} />
-        </>
+        <Post content={post} key={post.title} />
       ))}
     </Box>
   );

@@ -1,6 +1,6 @@
 import { Avatar, Box, Typography } from "@mui/material";
 import React from "react";
-import Image from "next/image";
+import Image from "next/legacy/image";
 
 function Post({ content }) {
   return (
@@ -121,7 +121,7 @@ function Post({ content }) {
                 >
                   <Image
                     src={content.picture}
-                    fill={true}
+                    fill="true"
                     objectFit={content.objectFit}
                     alt={content.alt}
                   />
