@@ -10,6 +10,7 @@ import SchoolIcon from "@mui/icons-material/School";
 import CakeIcon from "@mui/icons-material/Cake";
 import EmailIcon from "@mui/icons-material/Email";
 import Plane from "@app/components/pesawat";
+import Link from "next/link";
 
 function Header({ innerRef }) {
   return (
@@ -35,7 +36,7 @@ function Header({ innerRef }) {
           }}
         />
         <Box sx={{ display: "flex", marginTop: { md: 8, xs: 7.5 } }}>
-          <Button
+          {/* <Button
             variant="outlined"
             sx={{
               borderColor: "primary.text",
@@ -55,11 +56,13 @@ function Header({ innerRef }) {
                 height: { md: "20px", xs: "17px" },
               }}
             />
-          </Button>
+          </Button> */}
 
           <Button
             variant="contained"
             size="large"
+            LinkComponent={Link}
+            href="https://linkedin.com/in/rakhazufar"
             endIcon={
               <LinkedInIcon
                 sx={{
@@ -114,7 +117,7 @@ function Header({ innerRef }) {
               color: "primary.text",
             }}
           >
-            Web Developer, Graphic Designer, and... sometimes Video Editor :)
+            Web Developer & Graphic Designer
           </Typography>
         </Box>
         <Box sx={{ display: "flex", alignItems: "center", paddingTop: 1.5 }}>

@@ -5,7 +5,7 @@ function Plane() {
         src="pesawat/index.html"
         width="100%"
         style={{
-          height: { md: "40vh", xs: "30vh" },
+          height: "30vh",
           border: "none",
         }}
       >

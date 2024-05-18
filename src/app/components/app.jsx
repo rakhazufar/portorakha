@@ -5,6 +5,7 @@ import { useState, useEffect, useRef } from "react";
 import Navbar from "@app/components/navbar";
 import Header from "@app/components/header";
 import Tabs from "@app/components/tabs";
+import FloatButton from "@app/components/fab";
 
 function App() {
   const [hasScrolledPast, setHasScrolledPast] = useState(false);
@@ -50,6 +51,7 @@ function App() {
       <Container maxWidth="md" sx={{ padding: 0, mt: 7 }}>
         <Header innerRef={headerRef} />
         <Tabs />
+        <FloatButton />
       </Container>
     </Box>
   );

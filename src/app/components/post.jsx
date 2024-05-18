@@ -113,7 +113,7 @@ function Post({ content }) {
                   sx={{
                     width: "100%",
                     marginTop: 1,
-                    height: { md: "60vh", xs: "25vh" },
+                    height: { md: "70vh", xs: "30vh" },
                     position: "relative",
                     borderRadius: "10px",
                     overflow: "hidden",
@@ -122,7 +122,7 @@ function Post({ content }) {
                   <Image
                     src={content.picture}
                     fill={true}
-                    objectFit="cover"
+                    objectFit={content.objectFit}
                     alt={content.alt}
                   />
                 </Box>

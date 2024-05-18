@@ -1,4 +1,6 @@
 import { Box } from "@mui/material";
+import Sertifikat from "@app/../../public/static/sertifikat.png";
+import OverallScore from "@app/../../public/static/overall-score.png";
 import Post from "@app/components/post";
 
 function Certificate() {
@@ -7,17 +9,19 @@ function Certificate() {
       theme: "Binar 😀",
       title: "Look!🤞",
       body: firstPost,
-      picture: "/static/sertifikat.png",
+      picture: Sertifikat,
       alt: "Sertifikat Binar Academy",
       date: "22 July 2022",
+      objectFit: "contain",
     },
     {
-      theme: "New Experience 😍",
+      theme: "Overall Score 😍",
       title: "Berbinar with Binar!🤸‍♀️",
       body: secondPost,
-      picture: "/static/binar.jpg",
+      picture: OverallScore,
       alt: "Binar Academy",
       date: "25 July 2022",
+      objectFit: "contain",
     },
   ];
   return (
@@ -51,38 +55,29 @@ const firstPost = (
 
 const secondPost = (
   <>
-    Finally, its done! <br /> <br /> Shout out to{" "}
-    <span
-      style={{
-        fontWeight: 600,
-        color: "#3A9BDC",
-      }}
-    >
-      Binar Academy
+    I successfully completed a{" "}
+    <span style={{ fontWeight: 600, color: "#3A9BDC" }}>
+      six-month fullstack web development bootcamp
+    </span>
+    , achieving a final hard skill score of{" "}
+    <span style={{ fontWeight: 600, color: "#3A9BDC" }}>4.7</span> and a soft
+    skill score of{" "}
+    <span style={{ fontWeight: 600, color: "#3A9BDC" }}>4.8</span>. The program
+    encompassed everything from{" "}
+    <span style={{ fontWeight: 600, color: "#3A9BDC" }}>
+      basic web development
     </span>{" "}
-    for this opportunity and also kak{" "}
-    <span
-      style={{
-        fontWeight: 600,
-        color: "#3A9BDC",
-      }}
-    >
-      Burhan Riyadi
+    to{" "}
+    <span style={{ fontWeight: 600, color: "#3A9BDC" }}>advanced topics</span>{" "}
+    like React.js and API architecture. My skills in{" "}
+    <span style={{ fontWeight: 600, color: "#3A9BDC" }}>problem-solving</span>,{" "}
+    <span style={{ fontWeight: 600, color: "#3A9BDC" }}>critical thinking</span>
+    , and{" "}
+    <span style={{ fontWeight: 600, color: "#3A9BDC" }}>
+      team collaboration
     </span>{" "}
-    for being a great mentor! And also to all my friends Binarians, specially
-    for{" "}
-    <span
-      style={{
-        fontWeight: 600,
-        color: "#3A9BDC",
-      }}
-    >
-      Ryan Adhitama Putra, Al Gifari, and Muhammad Ams Rahul
-    </span>{" "}
-    to all the mutual stress every night trying to complete our final project😆
-    <br />
-    <br />
-    Thanks!
+    were notably enhanced, preparing me to design, develop, and deploy effective
+    web solutions.
   </>
 );
 

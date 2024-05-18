@@ -9,12 +9,11 @@ import {
   Box,
   Typography,
 } from "@mui/material";
+import Logo from "@app/../../public/static/glasses.png";
 import { styled } from "@mui/material/styles";
 import Switch from "@mui/material/Switch";
 import { useColorMode } from "@app/provider/darkMode";
-import Glasses from "@../public/static/glasses.png";
 import Image from "next/image";
-import { useEffect } from "react";
 
 const MaterialUISwitch = styled(Switch)(({ theme }) => ({
   width: 62,
@@ -86,7 +85,7 @@ function Navbar({ hasScrolledPast }) {
                 position: "relative",
               }}
             >
-              <Image src={Glasses} alt="Logo" fill={true} />
+              <Image src={Logo} alt="Logo" fill={true} />
             </Box>
             {hasScrolledPast ? (
               <Typography

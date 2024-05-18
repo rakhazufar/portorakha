@@ -7,3 +7,7 @@
 .MuiGrid-item {
   padding: 10px 0 10px 0 !important;
 }
+
+.rtf.open .rtf--mb > * {
+  transform: rotate(0deg) !important;
+}
