@@ -24,13 +24,16 @@ jobs:
     - name: Build
       run: npm run build
 
-    - name: rsync deployments
-      uses: contention/rsync-deployments@v2.0.0
+    - name: Rsync Deployments Action
+      uses: Burnett01/rsync-deployments@7.0.1
       with:
-        flags: 'azv' # 'a' for archive mode, 'z' for compression, 'v' for verbose
-        user: ${{ secrets.SSH_USERNAME }}  # Username server SSH
-        host: ${{ secrets.SSH_HOST }}  # Hostname atau IP server
-        remotepath: '/home/rakhazu/public_html/test/'  # Path server tempat kamu deploy
-        deploy_key: ${{ secrets.PRIVATE_KEY }}  # Kunci SSH privat
+        # The switches
+        switches: -avzr --delete -exclude=".git" -exclude=".github"
+        path: /
+        remote_path: /home/rakhazu/public_html/test
+        remote_host: ${{ secrets.SSH_HOST}}
+        remote_user: ${{ secrets.SSH_USERNAME}}
+        remote_key: ${{ secrets.PRIVATE_KEY }}
+              
 
 
