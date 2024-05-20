@@ -30,7 +30,6 @@ jobs:
         flags: 'azv' # 'a' for archive mode, 'z' for compression, 'v' for verbose
         user: ${{ secrets.SSH_USERNAME }}  # Username server SSH
         host: ${{ secrets.SSH_HOST }}  # Hostname atau IP server
-        localpath: './out/'  # Path lokal ke folder build
         remotepath: '/home/rakhazu/public_html/test/'  # Path server tempat kamu deploy
         deploy_key: ${{ secrets.PRIVATE_KEY }}  # Kunci SSH privat
 
