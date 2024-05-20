@@ -35,5 +35,4 @@ jobs:
           local-dir: out/
           server-dir: test/
           log-level: standard
-          passive: true
           timeout: 100000
