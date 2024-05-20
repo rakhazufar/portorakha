@@ -25,11 +25,13 @@ jobs:
       run: npm run build
 
     - name: Deploy to Server
-      uses: appleboy/scp-action@master
+      uses: SamKirkland/FTP-Deploy-Action@v4.3.5
       with:
-        host: rakhazufar.com
-        username: rakhazu
-        key: ${{ secrets.PRIVATE_KEY }}
-        port: 22
-        source: "out/*"  # Atau direktori build output yang lain sesuai konfigurasi Next.js
-        target: "/home/rakhazu/public_html/text"
+          server: ${{ secrets.FTP_SERVER}}
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          port: ${{ secrets.FTP_PORT }}
+          protocol: ftps 
+          local-dir: out/
+          server-dir: /home/rakhazu/public_html/test
+          log-level: standard 
