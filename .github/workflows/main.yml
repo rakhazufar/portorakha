@@ -24,15 +24,15 @@ jobs:
     - name: Build
       run: npm run build
 
-    - name: Deploy to Server
-      uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+    - name: rsync deployments
+      uses: contention/rsync-deployments@v2.0.0
       with:
-          server: ${{ secrets.FTP_SERVER}}
-          username: ${{ secrets.FTP_USERNAME }}
-          password: ${{ secrets.FTP_PASSWORD }}
-          port: ${{ secrets.FTP_PORT }}
-          protocol: ftps
-          local-dir: out/
-          server-dir: test/
-          log-level: standard
-          timeout: 30000
+        flags: 'azv'  # 'a' for archive mode, 'z' for compression, 'v' for verbose
+        excludes: '*.log' 
+        user: ${{ secrets.SSH_USERNAME }}  # Username server SSH
+        host: ${{ secrets.SSH_HOST }}  # Hostname atau IP server
+        localpath: './out/'  # Path lokal ke folder build
+        remotepath: '/test/'  # Path server tempat kamu deploy
+        deploy_key: ${{ secrets.PRIVATE_KEY }}  # Kunci SSH privat
+
+
