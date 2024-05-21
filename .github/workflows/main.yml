@@ -3,37 +3,34 @@ name: Build and Deploy Next.js App
 on:
   push:
     branches:
-      - main  # Atau branch yang kamu gunakan untuk produksi
+      - main # Atau branch yang kamu gunakan untuk produksi
 
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Checkout Repository
-      uses: actions/checkout@v2
+      - name: Checkout Repository
+        uses: actions/checkout@v2
 
-    - name: Set up Node.js
-      uses: actions/setup-node@v2
-      with:
-        node-version: '20.13.1'  # Pilih versi Node.js yang sesuai dengan projectmu
+      - name: Set up Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: "20.13.1" # Pilih versi Node.js yang sesuai dengan projectmu
 
-    - name: Install Dependencies
-      run: npm install
+      - name: Install Dependencies
+        run: npm install
 
-    - name: Build
-      run: npm run build
+      - name: Build
+        run: npm run build
 
-    - name: Rsync Deployments Action
-      uses: Burnett01/rsync-deployments@7.0.1
-      with:
-        # The switches
-        switches: -avzr --delete -exclude=".git" -exclude=".github"
-        path: ./out/
-        remote_path: /home/rakhazu/public_html/test
-        remote_host: ${{ secrets.SSH_HOST}}
-        remote_user: ${{ secrets.SSH_USERNAME}}
-        remote_key: ${{ secrets.PRIVATE_KEY }}
-              
-
-
+      - name: Rsync Deployments Action
+        uses: Burnett01/rsync-deployments@7.0.1
+        with:
+          # The switches
+          switches: -avzr --delete -exclude=".git" -exclude=".github"
+          path: ./out/
+          remote_path: /home/rakhazu/public_html
+          remote_host: ${{ secrets.SSH_HOST}}
+          remote_user: ${{ secrets.SSH_USERNAME}}
+          remote_key: ${{ secrets.PRIVATE_KEY }}
