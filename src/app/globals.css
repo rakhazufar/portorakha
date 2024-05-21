@@ -11,3 +11,14 @@
 .rtf.open .rtf--mb > * {
   transform: rotate(0deg) !important;
 }
+
+.responsive-iframe iframe {
+  height: 30vh; /* Default height */
+}
+
+@media (max-width: 768px) {
+  /* For small screens (xs) */
+  .responsive-iframe iframe {
+    height: 18vh;
+  }
+}
