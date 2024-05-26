@@ -13,12 +13,27 @@
 }
 
 .responsive-iframe iframe {
-  height: 30vh; /* Default height */
+  height: 40vh; /* Default height */
+}
+
+.responsive-iframe {
+  max-height: 30vh;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 @media (max-width: 768px) {
   /* For small screens (xs) */
   .responsive-iframe iframe {
-    height: 18vh;
+    border: none;
+    width: 300vw;
+    height: 25vh;
+  }
+
+  .responsive-iframe {
+    max-height: 18vh;
   }
 }

@@ -100,21 +100,43 @@ function About() {
 
 const firstPost = (
   <>
-    I&apos;m a big supporter of creative coding, and I aim to inspire confidence
-    in others to build whatever they can dream up. I enjoy talking about this
-    topic and teaching others how to enhance their coding skills.
+    I&apos;m a{" "}
+    <span style={{ fontWeight: 600, color: "#3A9BDC" }}>
+      front-end developer
+    </span>
+    ,{" "}
+    <span style={{ fontWeight: 600, color: "#3A9BDC" }}>graphic designer</span>,
+    and <span style={{ fontWeight: 600, color: "#3A9BDC" }}>video editor</span>.
+    As a front-end developer, I enjoy working with{" "}
+    <span style={{ fontWeight: 600, color: "#3A9BDC" }}>React</span>,{" "}
+    <span style={{ fontWeight: 600, color: "#3A9BDC" }}>Next.js</span>,{" "}
+    <span style={{ fontWeight: 600, color: "#3A9BDC" }}>TypeScript</span>, and{" "}
+    <span style={{ fontWeight: 600, color: "#3A9BDC" }}>Framer Motion</span>.
+    I&apos;m a big supporter of{" "}
+    <span style={{ fontWeight: 600, color: "#3A9BDC" }}>creative coding</span>,
+    and I aim to inspire confidence in others to build whatever they can dream
+    up. I enjoy talking about these topics and teaching others how to enhance
+    their coding skills.
     <br /> <br />
     I find it amazing how you can just open up a computer and have the world of
     knowledge at your fingertips!
-    <br /> <br />I enjoy working with React, designing CSS both within and
-    outside of JavaScript, and exploring Golang.
-    <br />
-    <br />
-    Beyond making websites, I&apos;m passionate about graphic design, public
-    speaking, and video editing.
-    <br /> <br /> For more on this, you can check the &quot;Content&quot; tab.
-    Feel free to drop a message and say &quot;Hey!&quot;. I&apos;m eager to
-    connect with you!
+    <br /> <br />
+    In <span style={{ fontWeight: 600, color: "#3A9BDC" }}>graphic design</span>
+    , I create visually compelling designs that communicate messages effectively
+    and creatively. Whether it&apos;s{" "}
+    <span style={{ fontWeight: 600, color: "#3A9BDC" }}>logo design</span>,{" "}
+    <span style={{ fontWeight: 600, color: "#3A9BDC" }}>branding</span>, or
+    creating stunning visuals, I love bringing ideas to life through design.
+    <br /> <br />
+    Beyond making websites, I&apos;m passionate about{" "}
+    <span style={{ fontWeight: 600, color: "#3A9BDC" }}>
+      public speaking
+    </span>{" "}
+    and teaching others about the world of technology and design.
+    <br /> <br />
+    Feel free to drop a message and say &quot;
+    <span style={{ fontWeight: 600, color: "#3A9BDC" }}>Hey!</span>&quot;.
+    I&apos;m eager to connect with you!
   </>
 );
 
