@@ -3,9 +3,19 @@ import Post from "@app/components/post";
 import Apparel from "@app/../../public/static/Apparel.png";
 import Wedding from "@app/../../public/static/syafiq-maya.png";
 import Secondhand from "@app/../../public/static/secondhand.png";
+import WisudaMQ from "@app/../../public/static/wisuda-mq.png";
 
 function Project() {
   const allPost = [
+    {
+      theme: "Graduation Invitation 🎓",
+      title: "Fast-tracked Project!",
+      body: graduationInvitationPost,
+      picture: WisudaMQ,
+      alt: "Madinatul Quran graduation invitation",
+      date: "30 July 2022",
+      objectFit: "contain",
+    },
     {
       theme: "Binar Academy👨‍💻",
       title: "Final Project💻",
@@ -43,15 +53,145 @@ function Project() {
   );
 }
 
+const graduationInvitationPost = (
+  <>
+    I had the opportunity to create a website for the{" "}
+    <span
+      style={{
+        fontWeight: 600,
+        color: "#3A9BDC",
+      }}
+    >
+      graduation invitation day
+    </span>{" "}
+    at{" "}
+    <span
+      style={{
+        fontWeight: 600,
+        color: "#3A9BDC",
+      }}
+    >
+      Pondok Pesantren Madinatul Quran
+    </span>
+    . This was a{" "}
+    <span
+      style={{
+        fontWeight: 600,
+        color: "#3A9BDC",
+      }}
+    >
+      fast-tracked project
+    </span>{" "}
+    developed using{" "}
+    <span
+      style={{
+        fontWeight: 600,
+        color: "#3A9BDC",
+      }}
+    >
+      Next.js
+    </span>
+    ,{" "}
+    <span
+      style={{
+        fontWeight: 600,
+        color: "#3A9BDC",
+      }}
+    >
+      Framer Motion
+    </span>
+    , and{" "}
+    <span
+      style={{
+        fontWeight: 600,
+        color: "#3A9BDC",
+      }}
+    >
+      Tailwind CSS
+    </span>{" "}
+    to ensure a smooth and visually appealing experience. You can explore the
+    website at{" "}
+    <a
+      href="https://wisuda-mq.rakhazufar.com"
+      style={{
+        fontWeight: 600,
+        color: "#3A9BDC",
+      }}
+    >
+      wisuda-mq.rakhazufar.com
+    </a>{" "}
+    or review the codebase on GitHub. Here is the link to the repository:
+    <br />
+    <a
+      href="https://github.com/rakhazufar/wisuda-mq.git"
+      style={{
+        fontWeight: 600,
+        color: "#3A9BDC",
+      }}
+    >
+      Graduation Invitation Website Repository on GitHub
+    </a>
+  </>
+);
+
 const finalProjectPost = (
   <>
-    For my final project at a full-stack development bootcamp hosted by Binar
-    Academy, I collaborated with a team of five to create a web application
-    using the PERN stack (PostgreSQL, Express.js, React.js, Node.js). Although
-    the website itself is no longer active, the codebase is accessible for
-    review. You can explore the frontend and backend repositories to understand
-    our project&apos;s structure, features, and the technologies we implemented.
-    Here are the links to the repositories: <br /> 1. Frontend:{" "}
+    For my final project at a{" "}
+    <span
+      style={{
+        fontWeight: 600,
+        color: "#3A9BDC",
+      }}
+    >
+      full-stack bootcamp
+    </span>{" "}
+    by{" "}
+    <span
+      style={{
+        fontWeight: 600,
+        color: "#3A9BDC",
+      }}
+    >
+      Binar Academy
+    </span>
+    , I worked with a team of five to build a{" "}
+    <span
+      style={{
+        fontWeight: 600,
+        color: "#3A9BDC",
+      }}
+    >
+      web app
+    </span>{" "}
+    using the{" "}
+    <span
+      style={{
+        fontWeight: 600,
+        color: "#3A9BDC",
+      }}
+    >
+      PERN stack (PostgreSQL, Express.js, React.js, Node.js)
+    </span>
+    . Although the site is no longer active, the{" "}
+    <span
+      style={{
+        fontWeight: 600,
+        color: "#3A9BDC",
+      }}
+    >
+      codebase is available
+    </span>{" "}
+    for review. Explore the frontend and backend repos to understand the
+    project&apos;s{" "}
+    <span
+      style={{
+        fontWeight: 600,
+        color: "#3A9BDC",
+      }}
+    >
+      structure and technologies
+    </span>
+    . Here are the repository links: <br /> 1. Frontend:
     <a
       href="https://gitlab.com/kelompok-4-fsw7/frontend.git"
       style={{
