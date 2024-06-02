@@ -4,9 +4,19 @@ import Apparel from "@app/../../public/static/Apparel.png";
 import Wedding from "@app/../../public/static/syafiq-maya.png";
 import Secondhand from "@app/../../public/static/secondhand.png";
 import WisudaMQ from "@app/../../public/static/wisuda-mq.png";
+import Exclusive from "@app/../../public/static/exclusive.png";
 
 function Project() {
   const allPost = [
+    {
+      theme: "Exclusive 📱",
+      title: "Under Development!",
+      body: graduationInvitationPost,
+      picture: Exclusive,
+      alt: "Web for selling smartphones",
+      date: "under development",
+      objectFit: "contain",
+    },
     {
       theme: "Graduation Invitation 🎓",
       title: "Fast-tracked Project!",
