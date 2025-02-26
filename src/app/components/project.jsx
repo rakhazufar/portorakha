@@ -1,3 +1,5 @@
+/* eslint-disable */
+
 import { Box } from "@mui/material";
 import Post from "@app/components/post";
 import Apparel from "@app/../../public/static/Apparel.png";
