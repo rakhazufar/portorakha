@@ -113,7 +113,7 @@ function Post({ content }) {
                   sx={{
                     width: "100%",
                     marginTop: 1,
-                    height: { md: "70vh", xs: "30vh" },
+                    minHeight: { md: "40vh", xs: "25vh" },
                     position: "relative",
                     borderRadius: "10px",
                     overflow: "hidden",

@@ -1,5 +1,6 @@
 import { Box } from "@mui/material";
 import Sertifikat from "@app/../../public/static/sertifikat.png";
+import Python from "@app/../../public/static/python_basic.jpg";
 import OverallScore from "@app/../../public/static/overall-score.png";
 import Post from "@app/components/post";
 
@@ -12,6 +13,15 @@ function Certificate() {
       picture: Sertifikat,
       alt: "Sertifikat Binar Academy",
       date: "22 July 2022",
+      objectFit: "contain",
+    },
+    {
+      theme: "Python Certificate🐍",
+      title: "Yuhuuu!",
+      body: firstPost,
+      picture: Python,
+      alt: "Hackerrank Certificate",
+      date: "24 January 2025",
       objectFit: "contain",
     },
     {
@@ -48,6 +58,22 @@ const firstPost = (
     and has significantly expanded my skill set. A huge thank you to Binar
     Academy for the guidance and knowledge. Eager to apply what I&apos;ve
     learned in the real world.
+  </>
+);
+
+const thirdPost = (
+  <>
+    Excited to share that I&apos;ve earned my{" "}
+    <span
+      style={{
+        fontWeight: 600,
+        color: "#3A9BDC",
+      }}
+    >
+      Python Basic Certification!
+    </span>{" "}
+    . Grateful for the learning experience and ready to put these skills into action!  
+
   </>
 );
 

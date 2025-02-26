@@ -100,43 +100,57 @@ function About() {
 
 const firstPost = (
   <>
-    I&apos;m a{" "}
+   I&apos;m a{" "}
     <span style={{ fontWeight: 600, color: "#3A9BDC" }}>
-      front-end developer
+      web developer
     </span>
     ,{" "}
     <span style={{ fontWeight: 600, color: "#3A9BDC" }}>graphic designer</span>,
-    and <span style={{ fontWeight: 600, color: "#3A9BDC" }}>video editor</span>.
-    As a front-end developer, I enjoy working with{" "}
+    and <span style={{ fontWeight: 600, color: "#3A9BDC" }}>content creator</span>.
+    As a web developer, I specialize in{" "}
     <span style={{ fontWeight: 600, color: "#3A9BDC" }}>React</span>,{" "}
-    <span style={{ fontWeight: 600, color: "#3A9BDC" }}>Next.js</span>,{" "}
-    <span style={{ fontWeight: 600, color: "#3A9BDC" }}>TypeScript</span>, and{" "}
-    <span style={{ fontWeight: 600, color: "#3A9BDC" }}>Framer Motion</span>.
-    I&apos;m a big supporter of{" "}
-    <span style={{ fontWeight: 600, color: "#3A9BDC" }}>creative coding</span>,
-    and I aim to inspire confidence in others to build whatever they can dream
-    up. I enjoy talking about these topics and teaching others how to enhance
-    their coding skills.
+    <span style={{ fontWeight: 600, color: "#3A9BDC" }}>Express.js</span>,{" "}
+    <span style={{ fontWeight: 600, color: "#3A9BDC" }}>SQL</span>, and{" "}
+    <span style={{ fontWeight: 600, color: "#3A9BDC" }}>WordPress</span>.
+    I have experience in{" "}
+    <span style={{ fontWeight: 600, color: "#3A9BDC" }}>full-stack development</span>,
+    working on website performance optimization,{" "}
+    <span style={{ fontWeight: 600, color: "#3A9BDC" }}>SEO</span>, and{" "}
+    <span style={{ fontWeight: 600, color: "#3A9BDC" }}>backend APIs</span>.
     <br /> <br />
-    I find it amazing how you can just open up a computer and have the world of
-    knowledge at your fingertips!
+    I believe technology plays a key role in effective communication, and I enjoy
+    building websites that deliver a seamless user experience.
     <br /> <br />
     In <span style={{ fontWeight: 600, color: "#3A9BDC" }}>graphic design</span>
-    , I create visually compelling designs that communicate messages effectively
-    and creatively. Whether it&apos;s{" "}
-    <span style={{ fontWeight: 600, color: "#3A9BDC" }}>logo design</span>,{" "}
-    <span style={{ fontWeight: 600, color: "#3A9BDC" }}>branding</span>, or
-    creating stunning visuals, I love bringing ideas to life through design.
+    , I create compelling visuals for{" "}
+    <span style={{ fontWeight: 600, color: "#3A9BDC" }}>branding</span>,{" "}
+    <span style={{ fontWeight: 600, color: "#3A9BDC" }}>social media</span>, and{" "}
+    <span style={{ fontWeight: 600, color: "#3A9BDC" }}>marketing campaigns</span>.
+    Whether it&apos;s designing{" "}
+    <span style={{ fontWeight: 600, color: "#3A9BDC" }}>logos</span> or crafting{" "}
+    <span style={{ fontWeight: 600, color: "#3A9BDC" }}>engaging visuals</span>,
+    I love transforming ideas into impactful designs.
     <br /> <br />
-    Beyond making websites, I&apos;m passionate about{" "}
+    As a <span style={{ fontWeight: 600, color: "#3A9BDC" }}>
+      content creator
+    </span>, I develop engaging{" "}
+    <span style={{ fontWeight: 600, color: "#3A9BDC" }}>videos</span> and{" "}
+    <span style={{ fontWeight: 600, color: "#3A9BDC" }}>digital content</span> 
+    for various platforms, including{" "}
+    <span style={{ fontWeight: 600, color: "#3A9BDC" }}>Instagram</span>,{" "}
+    <span style={{ fontWeight: 600, color: "#3A9BDC" }}>YouTube</span>, and{" "}
+    <span style={{ fontWeight: 600, color: "#3A9BDC" }}>TikTok</span>.
+    <br /> <br />
+    Beyond web development and design, I&apos;m passionate about{" "}
     <span style={{ fontWeight: 600, color: "#3A9BDC" }}>
-      public speaking
+      digital communication
     </span>{" "}
-    and teaching others about the world of technology and design.
+    and sharing knowledge on technology and creative fields.
     <br /> <br />
     Feel free to drop a message and say &quot;
     <span style={{ fontWeight: 600, color: "#3A9BDC" }}>Hey!</span>&quot;.
-    I&apos;m eager to connect with you!
+    I&apos;m always open to new collaborations and discussions!
+
   </>
 );
 

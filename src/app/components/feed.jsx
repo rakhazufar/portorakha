@@ -1,6 +1,6 @@
 import { Box } from "@mui/material";
 import Post from "@app/components/post";
-import Hello from "@app/../../public/static/photo-1.jpg";
+import Hello from "@app/../../public/static/foto_rakha.png";
 import Binar from "@app/../../public/static/binar.jpg";
 import Graduation from "@app/../../public/static/graduation.jpeg";
 
@@ -13,7 +13,7 @@ function Feed() {
       picture: Hello,
       alt: "Picture of the author",
       date: "6 February 2024",
-      objectFit: "cover",
+      objectFit: "contain",
     },
     {
       theme: "Graduatee! 🎓",

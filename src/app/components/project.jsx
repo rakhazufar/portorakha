@@ -1,29 +1,39 @@
 import { Box } from "@mui/material";
 import Post from "@app/components/post";
 import Apparel from "@app/../../public/static/Apparel.png";
-import Wedding from "@app/../../public/static/syafiq-maya.png";
 import Secondhand from "@app/../../public/static/secondhand.png";
-import WisudaMQ from "@app/../../public/static/wisuda-mq.png";
-import Exclusive from "@app/../../public/static/exclusive.png";
+import Muslimlifefest from "@app/../../public/static/muslimlifefest.png";
+import Moslemjourney from "@app/../../public/static/moslemjourney.png";
+import Satsenu from "@app/../../public/static/satsenu.png";
+
 
 function Project() {
   const allPost = [
     {
-      theme: "Exclusive 📱",
-      title: "Under Development!",
-      body: graduationInvitationPost,
-      picture: Exclusive,
-      alt: "Web for selling smartphones",
-      date: "under development",
+      theme: "Wordpress💻",
+      title: "Moslem Journey Websiteee!",
+      body: moslemJourneyPost,
+      picture: Moslemjourney,
+      alt: "Wordpress project moslem journey!",
+      date: "Sometimes in 2024",
       objectFit: "contain",
     },
     {
-      theme: "Graduation Invitation 🎓",
-      title: "Fast-tracked Project!",
-      body: graduationInvitationPost,
-      picture: WisudaMQ,
-      alt: "Madinatul Quran graduation invitation",
-      date: "30 July 2022",
+      theme: "Wordpress💻",
+      title: "Muslem Life Fest!",
+      body: muslimLifeFestPost,
+      picture: Muslimlifefest,
+      alt: "Muslimlifefest",
+      date: "Sometimes in 2024",
+      objectFit: "contain",
+    },
+    {
+      theme: "Wordpress💻",
+      title: "Satsenu Event Management!",
+      body: satsenuPost,
+      picture: Satsenu,
+      alt: "Satsenu!",
+      date: "Sometimes in 2024",
       objectFit: "contain",
     },
     {
@@ -44,15 +54,6 @@ function Project() {
       date: "8 July 2022",
       objectFit: "contain",
     },
-    {
-      theme: "Wedding Invitation 😍",
-      title: "Mobile Only📱",
-      body: secondPost,
-      picture: Wedding,
-      alt: "Wedding Invitation",
-      date: "14 July 2022",
-      objectFit: "contain",
-    },
   ];
   return (
     <Box>
@@ -62,87 +63,6 @@ function Project() {
     </Box>
   );
 }
-
-const graduationInvitationPost = (
-  <>
-    I had the opportunity to create a website for the{" "}
-    <span
-      style={{
-        fontWeight: 600,
-        color: "#3A9BDC",
-      }}
-    >
-      graduation invitation day
-    </span>{" "}
-    at{" "}
-    <span
-      style={{
-        fontWeight: 600,
-        color: "#3A9BDC",
-      }}
-    >
-      Pondok Pesantren Madinatul Quran
-    </span>
-    . This was a{" "}
-    <span
-      style={{
-        fontWeight: 600,
-        color: "#3A9BDC",
-      }}
-    >
-      fast-tracked project
-    </span>{" "}
-    developed using{" "}
-    <span
-      style={{
-        fontWeight: 600,
-        color: "#3A9BDC",
-      }}
-    >
-      Next.js
-    </span>
-    ,{" "}
-    <span
-      style={{
-        fontWeight: 600,
-        color: "#3A9BDC",
-      }}
-    >
-      Framer Motion
-    </span>
-    , and{" "}
-    <span
-      style={{
-        fontWeight: 600,
-        color: "#3A9BDC",
-      }}
-    >
-      Tailwind CSS
-    </span>{" "}
-    to ensure a smooth and visually appealing experience. You can explore the
-    website at{" "}
-    <a
-      href="https://wisuda-mq.rakhazufar.com"
-      style={{
-        fontWeight: 600,
-        color: "#3A9BDC",
-      }}
-    >
-      wisuda-mq.rakhazufar.com
-    </a>{" "}
-    or review the codebase on GitHub. Here is the link to the repository:
-    <br />
-    <a
-      href="https://github.com/rakhazufar/wisuda-mq.git"
-      style={{
-        fontWeight: 600,
-        color: "#3A9BDC",
-      }}
-    >
-      Graduation Invitation Website Repository on GitHub
-    </a>
-  </>
-);
 
 const finalProjectPost = (
   <>
@@ -224,6 +144,116 @@ const finalProjectPost = (
   </>
 );
 
+const satsenuPost = (
+  <>
+    I had the opportunity to contribute to{" "}
+    <span
+      style={{
+        fontWeight: 600,
+        color: "#3A9BDC",
+      }}
+    >
+      Satsenu
+    </span>
+    , an{" "}
+    <span
+      style={{
+        fontWeight: 600,
+        color: "#3A9BDC",
+      }}
+    >
+      event management platform
+    </span>{" "}
+    designed to streamline{" "}
+    <span
+      style={{
+        fontWeight: 600,
+        color: "#3A9BDC",
+      }}
+    >
+      event planning, coordination, and ticketing
+    </span>
+    . This project focuses on making{" "}
+    <span
+      style={{
+        fontWeight: 600,
+        color: "#3A9BDC",
+      }}
+    >
+      organizing events more efficient and seamless
+    </span>
+    . Stay tuned for updates on upcoming features! 🎟️🚀
+  </>
+);
+
+
+const moslemJourneyPost = (
+  <>
+    For my project at{" "}
+    <span
+      style={{
+        fontWeight: 600,
+        color: "#3A9BDC",
+      }}
+    >
+      Moslem Journey
+    </span>
+    , I worked on creating content and sharing stories about{" "}
+    <span
+      style={{
+        fontWeight: 600,
+        color: "#3A9BDC",
+      }}
+    >
+      Muslim-friendly travel experiences
+    </span>
+    . The goal was to provide valuable insights and{" "}
+    <span
+      style={{
+        fontWeight: 600,
+        color: "#3A9BDC",
+      }}
+    >
+      recommendations for Muslim travelers
+    </span>
+    . Check out the latest posts and explore the journey! 🚀✨
+  </>
+);
+
+const muslimLifeFestPost = (
+  <>
+    As part of my content creation journey, I contributed to{" "}
+    <span
+      style={{
+        fontWeight: 600,
+        color: "#3A9BDC",
+      }}
+    >
+      Muslim Life Fest
+    </span>
+    , an event that brings together{" "}
+    <span
+      style={{
+        fontWeight: 600,
+        color: "#3A9BDC",
+      }}
+    >
+      Islamic lifestyle, business, and culture
+    </span>
+    . My role involved crafting engaging content to{" "}
+    <span
+      style={{
+        fontWeight: 600,
+        color: "#3A9BDC",
+      }}
+    >
+      highlight the event's impact
+    </span>
+    . Stay tuned for more insights from the festival! 🎉📢
+  </>
+);
+
+
 const firstPost = (
   <>
     99 Apparel is an elegantly designed company profile website developed using
@@ -244,35 +274,6 @@ const firstPost = (
       {" "}
       here.
     </a>
-  </>
-);
-
-const secondPost = (
-  <>
-    The wedding invitation website for &quot;Syafiq & Maya&quot; was one of my{" "}
-    <span
-      style={{
-        fontWeight: 600,
-        color: "#3A9BDC",
-      }}
-    >
-      first projects using React.js
-    </span>
-    , specifically designed for mobile use. It’s a simple site that does its
-    job, but looking back, I see plenty of room for improvement. Now, with more
-    experience and a better grasp of the technology, I’m excited about the
-    possibility of creating far more sophisticated and visually appealing
-    wedding websites. You can check out the original version{" "}
-    <a
-      href="https://syafiq-maya.web.app"
-      style={{
-        fontWeight: 600,
-        color: "#3A9BDC",
-      }}
-    >
-      here
-    </a>{" "}
-    to see where I started!
   </>
 );
 
